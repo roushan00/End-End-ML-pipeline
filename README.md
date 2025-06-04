@@ -3,6 +3,7 @@
 # ML-Pipeline-DVC
 
 How to run?
+
 conda create -n test python=3.11 -y
 
 conda activate test
@@ -10,6 +11,7 @@ conda activate test
 pip install -r requirements.txt
 
 DVC Commands
+
 git init
 
 dvc init
@@ -56,7 +58,9 @@ dvc metrics show
 
 3. Create ECR repo to store/save docker image
 - Save the URI: 315865595366.dkr.ecr.us-east-1.amazonaws.com/winerepo
+
 4. Create EC2 machine (Ubuntu)
+
 5. Open EC2 and Install docker in EC2 Machine:
 #optinal
 
@@ -75,7 +79,9 @@ sudo usermod -aG docker ubuntu
 newgrp docker
 6. Configure EC2 as self-hosted runner:
 setting>actions>runner>new self hosted runner> choose os> then run command one by one
+
 7. Setup github secrets:
+
 AWS_ACCESS_KEY_ID=
 
 AWS_SECRET_ACCESS_KEY=
